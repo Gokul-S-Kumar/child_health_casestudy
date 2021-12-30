@@ -34,7 +34,7 @@ def timeseries_eda(df, feature, fig_size):
 	plt.title('{} countplot'.format(feature))
 	plt.show()
 
-def continous_eda(df, feature, fig_size):
+def continuous_eda(df, feature, fig_size):
 	print('Missing values count:', df[feature].isna().sum(), '/ {}'.format(len(df[feature])))
 	print('Missing values %:', df[feature].isna().mean())
 	print('Descriptive stats: ')
